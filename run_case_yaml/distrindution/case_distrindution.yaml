@@ -1,0 +1,367 @@
+- assert:
+    rcode: 0
+    scode: 0
+  name: get_query_order_data1
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      desc: 'true'
+      page: 1
+      pageSize: 1
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      sort: payTime
+      status: 1
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      useTimeInt: 1
+    path: /api/distribution/order/queryDistributionOrderPaging
+- assert:
+    rcode: 0
+    scode: 0
+  name: get_query_order_data2
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      desc: 'true'
+      page: 1
+      pageSize: 1
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      sort: payTime
+      status: 2
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      useTimeInt: 1
+    path: /api/distribution/order/queryDistributionOrderPaging
+- assert:
+    rcode: 0
+    scode: 0
+  name: get_query_order_data3
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      desc: 'true'
+      page: 1
+      pageSize: 1
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      sort: payTime
+      status: 3
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      useTimeInt: 1
+    path: /api/distribution/order/queryDistributionOrderPaging
+- assert:
+    rcode: 0
+    scode: 0
+  name: get_configuration
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      platform: fxg
+      referer: fhdportal
+      shopIds: '1484912774'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/factory/getDistributionRule
+- assert:
+    rcode: 0
+    scode: 0
+  name: save_configuration
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      configStr: "\u8BF7\u6C42\u5F02\u5E38"
+      platform: fxg
+      referer: fhdportal
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/factory/saveDistributionRule
+- assert:
+    rcode: 0
+    scode: 0
+  name: disibute_Orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      marsCode: RJ7AT
+      marsId: 561
+      orderListStr: '[{''distributionOrderSn'': ''DF16981449693120428424446535'',
+        ''orderSn'': ''6922977880701212222''}]'
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/order/disibuteOrder
+- assert:
+    rcode: 0
+    scode: 0
+  name: cancel_Orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      marsCode: RJ7AT
+      marsId: 561
+      orderListStr: '[{''distributionOrderSn'': ''DF16981449693120428424446535'',
+        ''orderSn'': ''6922977880701212222''}]'
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/order/disibuteOrder
+- assert:
+    rcode: 0
+    scode: 0
+  name: assess_orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      orderSns: '6922977880701212222'
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/order/isDistributionOrder
+- assert:
+    rcode: 0
+    scode: 0
+  name: get_Manufacturer_Link
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      platform: fxg
+      referer: fhdportal
+      shopToken: "[{'shopId': '4463798', 'shopName': '\u5F00\u653E\u5E73\u53F0\u6D4B\
+        \u8BD5\u5E97\u94FA'}]"
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/factory/generateInviteLink
+- assert:
+    rcode: 0
+    scode: 0
+  name: check_Distribution_Order
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      marsId: 561
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/order/checkDistributionOrder
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_DistributionItem
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      page: 1
+      pageSize: 10
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/item/queryDistributionItem
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_items_data
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      isAbbreviation: 2
+      itemName: null
+      page: 1
+      pageSize: 10
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      shortGoodsName: null
+      status: 0
+      tagId: null
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/store/queryItemPaging
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_sku_data
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      itemIds: '46437225774'
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/item/queryDistributionItemSkuByItemIdList
+- assert:
+    rcode: 0
+    scode: 0
+  name: bind_DistributionItem_Factory
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      itemIds: '46437225774'
+      marsId: 561
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /api/distribution/item/bindDistributionItemFactory
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_Lates_SyncTask01_orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      platform: fxg
+      referer: fhdportal
+      shopIds: '1484912774'
+      status: 0,1
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 70
+    path: /api/thirdplatform/queryLatestSyncTask.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_Lates_SyncTask2_orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      platform: fxg
+      referer: fhdportal
+      shopIds: '1484912774'
+      status: '2'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 70
+    path: /api/thirdplatform/queryLatestSyncTask.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: save_Sync_Task_orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      id: 35
+      params: '{"userId":10001,"startTime":1690169310,"endTime":1692847710,"mergeSet":false}'
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 70
+    path: /api/thirdplatform/saveSyncTask.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_Sync_Task_Progress_orders
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      id: 35
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 70
+    path: /api/thirdplatform/querySyncTaskProgress.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_Lates_SyncTask01_goods
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      platform: fxg
+      referer: fhdportal
+      shopIds: '1484912774'
+      status: 0,1
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 71
+    path: /api/thirdplatform/queryLatestSyncTask.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_Lates_SyncTask2_goods
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      platform: fxg
+      referer: fhdportal
+      shopIds: '1484912774'
+      status: '2'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 71
+    path: /api/thirdplatform/queryLatestSyncTask.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: save_Sync_Task_goods
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      id: 35
+      params: '{"userId":10001,"startTime":1690169310,"endTime":1692847710,"mergeSet":false}'
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 71
+    path: /api/thirdplatform/saveSyncTask.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: query_Sync_Task_Progress_goods
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      id: 35
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+      type: 71
+    path: /api/thirdplatform/querySyncTaskProgress.do

@@ -1,0 +1,28 @@
+- assert:
+    rcode: 0
+    scode: 0
+  name: Test Get ShoId And Url
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      referer: fhdportal
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /fhd/tp/getUserThirdPartyList.do
+- assert:
+    rcode: 0
+    scode: 0
+  name: Test Get marsId And marsCode
+  request:
+    headers:
+      content-type: application/x-www-form-urlencoded
+    method: post
+    params:
+      pageNum: 1
+      pageSize: 20
+      platform: fxg
+      referer: fhdportal
+      shopId: '4463798'
+      token: '%7EXFMDAgBWBhxSGAJTTwBSSQUYWh0HAkhUABhUTQJIUA5cWQQBBVQEBB1RWAQ%3D%7E1%7E'
+    path: /fhd/mars/getDistributorListPaging.do
